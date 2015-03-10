@@ -1,0 +1,2 @@
+# Seegno Coding Standards
+
