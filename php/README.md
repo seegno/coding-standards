@@ -16,7 +16,7 @@ Code indentation *must* be of `4 spaces`.
 
 ## DocBlocks
 
-Classes and methods should have a multi-line `DocComment` with a brief description of the class/method.
+Classes and methods *must* have a multi-line `DocComment` with a brief description of the class/method.
 
 Examples:
 
