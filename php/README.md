@@ -6,8 +6,13 @@ Our main focus will be the use of [Symfony2](http://symfony.com/) framework.
 
 ## Table of contents
 
+1. [Indenting](#indenting)
 1. [DocBlocks](#docblocks)
 1. [Visibility](#visibility)
+
+## Indenting
+
+Code indentation *must* be of `4 spaces`.
 
 ## DocBlocks
 
