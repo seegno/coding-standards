@@ -6,12 +6,17 @@ Our main focus will be the use of [Symfony2](http://symfony.com/) framework.
 
 ## Table of contents
 
+1. [Indenting](#indenting)
 1. [DocBlocks](#docblocks)
 1. [Visibility](#visibility)
 
+## Indenting
+
+Code indentation *must* be of `4 spaces`.
+
 ## DocBlocks
 
-Classes and methods should have a multi-line `DocComment` with a brief description of the class/method.
+Classes and methods *must* have a multi-line `DocComment` with a brief description of the class/method.
 
 Examples:
 
