@@ -9,6 +9,7 @@ Our main focus will be the use of [Symfony2](http://symfony.com/) framework.
 1. [Indenting](#indenting)
 1. [DocBlocks](#docblocks)
 1. [Visibility](#visibility)
+1. [Namespace and Use declarations](#namespace-and-use-declarations)
 
 ## Indenting
 
@@ -18,7 +19,7 @@ Code indentation *must* be of `4 spaces`.
 
 Classes and methods *must* have a multi-line `DocComment` with a brief description of the class/method.
 
-Examples:
+Example:
 
 ```php
 /**
@@ -110,4 +111,24 @@ abstract class ClassName
         // ...
     }
 }
+```
+
+## Namespace and Use declarations
+
+All PHP files *must* have a `namespace` declaration. You *must* also include an `use` declaration for each external class that is used.
+
+Example:
+
+```php
+<?php
+
+namespace Vendor\Package;
+
+use \DateTime as DateTime;
+use \Exception as Exception;
+use Foobar;
+use Foobaz as Baz;
+use OtherVendor\OtherPackage\Qux;
+
+// ...
 ```
