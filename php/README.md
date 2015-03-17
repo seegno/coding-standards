@@ -55,6 +55,21 @@ class Foobar
 }
 ```
 
+You *must* break the `DocComment` if the description exceeds the `80 columns`.
+
+Example:
+
+```php
+/**
+ * This is a very long method description to demonstrate how to break a comment
+ * into several lines if the total number of columns exceeds 80.
+ */
+public function foobar()
+{
+    // ...
+}
+```
+
 ## Visibility
 
 Visibility *must* be declared on all properties and methods. `abstract` and `final` must be declared before the visibility and `static` must be declared after the visibility.
