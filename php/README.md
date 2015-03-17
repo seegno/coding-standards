@@ -10,6 +10,7 @@ Our main focus will be the use of [Symfony2](http://symfony.com/) framework.
 1. [DocBlocks](#docblocks)
 1. [Visibility](#visibility)
 1. [Namespace and Use declarations](#namespace-and-use-declarations)
+1. [Control Structures](#control-structures)
 
 ## Indenting
 
@@ -146,4 +147,64 @@ use Foobaz as Baz;
 use OtherVendor\OtherPackage\Qux;
 
 // ...
+```
+
+## Control Structures
+
+The following examples show how control structures look.
+
+Examples:
+
+```php
+// if, elseif, else example.
+if ($foobar) {
+    // ...
+} elseif ($foobiz) {
+    // ...
+} else {
+    // ...
+}
+
+// for example.
+for ($i=0; $i < ; $i++) {
+    // ...
+}
+
+// foreach example.
+foreach ($iterable as $key => $value) {
+    // ...
+}
+
+// try, catch example.
+try {
+    // ...
+} catch (FoobarExceptionType $e) {
+    // ...
+} catch (OtherExceptionType $e) {
+    // ...
+}
+```
+
+The `switch`, `case` control structure have one important detail. There *must* be a comment such as `// no break.` when fall-through is intentional in a non-empty `case` body.
+
+Example:
+
+```php
+// switch example.
+switch ($foobar) {
+    case 0:
+        echo 'First case, with a break';
+        break;
+    case 1:
+        echo 'Second case, which falls through';
+        // no break.
+    case 2:
+    case 3:
+    case 4:
+        echo 'Third case, return instead of break';
+        return;
+    default:
+        echo 'Default case';
+        break;
+}
 ```
