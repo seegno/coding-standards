@@ -55,7 +55,7 @@ class Foobar
 }
 ```
 
-You *must* break the `DocComment` if the description exceeds the `80 columns`.
+You *must* break `DocComment` if the description exceeds the `80 columns`.
 
 Example:
 
