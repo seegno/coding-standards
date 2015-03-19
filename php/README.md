@@ -4,6 +4,19 @@ This documentation describes the **PHP** coding standards for all Seegno project
 
 Our main focus will be the use of [Symfony2](http://symfony.com/) framework.
 
+## Base Standards
+
+We follow the standards described in these documents:
+- [PSR-0](http://www.php-fig.org/psr/psr-0/)
+- [PSR-1](http://www.php-fig.org/psr/psr-1/)
+- [PSR-2](http://www.php-fig.org/psr/psr-2/)
+
+Any extension to those standards will be described here.
+
+### Examples
+
+You can check [Symfony documentation](http://symfony.com/doc/current/contributing/code/standards.html) for more examples since Symfony2 also follows the standards defined in `PSR-0`, `PSR-1` and `PSR-2`.
+
 ## Table of contents
 
 1. [Indenting](#indenting)
