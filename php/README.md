@@ -24,6 +24,7 @@ You can check [Symfony documentation](http://symfony.com/doc/current/contributin
 1. [Visibility](#visibility)
 1. [Namespace and Use declarations](#namespace-and-use-declarations)
 1. [Method declaration](#method-declaration)
+1. [Yoda Conditions](#yoda-conditions)
 
 ## Indenting
 
@@ -193,6 +194,17 @@ public function doSomething(
     array $arg3 = [],
     SomeClass $arg4
 ) {
+
+## Yoda Conditions
+
+You *must* use yoda conditions when doing logical comparisons `===` and `!==`. *Must not* use yoda conditions for `<`, `>`, `<=` and `>=` since they are difficult to read.
+
+```php
+if ('foo' === $foobar) {
+    // ...
+}
+
+if ('bar' !== $foobar) {
     // ...
 }
 ```
