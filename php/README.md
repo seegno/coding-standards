@@ -245,3 +245,26 @@ XXX/...
                     ...
                 ...
 ```
+
+## Gitignore
+
+Here you'll find a `.gitignore` example:
+
+```php
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+/app/spool/*
+/bin/
+/composer.phar
+/node_modules/
+/vendor/
+/web/app.php
+/web/assets/vendor
+/web/build/
+/web/bundles/
+/web/uploads/
+```
