@@ -342,7 +342,7 @@ XXX/...
 
 Here you'll find a `.gitignore` example:
 
-```php
+```
 !app/cache/.gitkeep
 !app/logs/.gitkeep
 /app/bootstrap.php.cache
