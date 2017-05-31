@@ -25,6 +25,7 @@ You can check [Symfony documentation](http://symfony.com/doc/current/contributin
 1. [Namespace and Use declarations](#namespace-and-use-declarations)
 1. [Method declaration](#method-declaration)
 1. [Yoda Conditions](#yoda-conditions)
+1. [Tests directory structure](#tests-directory-structure)
 
 ## Indenting
 
@@ -207,4 +208,40 @@ if ('foo' === $foobar) {
 if ('bar' !== $foobar) {
     // ...
 }
+
+## Tests directory structure
+
+Inside the `Tests` directory, unit and integration tests *must* be in separate folders - `Integration/` and `Unit/`.
+
+`Tests/` directory *must* look like the example below:
+
+```php
+XXX/...
+    FoobarBundle/
+        Tests/
+            Integration/
+                Controller/
+                    FoobarControllerTest.php
+                    ...
+                Entity/
+                    FoobarTest.php
+                    ...
+                Fixtures/
+                    FoobarFixtures.php
+                    ...
+                Manager/
+                    FoobarManagerTest.php
+                    ...
+                Repository/
+                    FoobarRepositoryTest.php
+                    ...
+                ...
+            Unit/
+                Entity/
+                    FoobarTest.php
+                    ...
+                Manager/
+                    FoobarManagerTest.php
+                    ...
+                ...
 ```
