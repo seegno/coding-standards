@@ -10,6 +10,7 @@ Our main focus will be the use of [Symfony2](http://symfony.com/) framework.
 1. [DocBlocks](#docblocks)
 1. [Visibility](#visibility)
 1. [Namespace and Use declarations](#namespace-and-use-declarations)
+1. [Method declaration](#method-declaration)
 
 ## Indenting
 
@@ -146,4 +147,39 @@ use Foobaz as Baz;
 use OtherVendor\OtherPackage\Qux;
 
 // ...
+```
+
+## Method declaration
+
+All methods *must* have visibility declared and you *must* type all method arguments that you can.
+Method names *must* be declared in camelCase.
+
+Example:
+
+```php
+/**
+ * A brief description of the foobar method.
+ */
+public function doSomething($arg1, FoobizClass $arg2, array $arg3 = [])
+{
+    // ...
+}
+```
+
+If the method declaration exceeds `80 columns`, you *must* break the arguments as shown in the example below.
+
+Example:
+
+```php
+/**
+ * A method example when the declaration exceeds the 80 columns.
+ */
+public function doSomething(
+    $arg1,
+    FoobizClass $arg2,
+    array $arg3 = [],
+    SomeClass $arg4
+) {
+    // ...
+}
 ```
