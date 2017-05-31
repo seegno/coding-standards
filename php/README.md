@@ -24,6 +24,7 @@ You can check [Symfony documentation](http://symfony.com/doc/current/contributin
 1. [Visibility](#visibility)
 1. [Namespace and Use declarations](#namespace-and-use-declarations)
 1. [Method declaration](#method-declaration)
+1. [Naming conventions](#naming-conventions)
 1. [Yoda Conditions](#yoda-conditions)
 1. [Tests directory structure](#tests-directory-structure)
 
@@ -208,6 +209,95 @@ if ('foo' === $foobar) {
 if ('bar' !== $foobar) {
     // ...
 }
+```
+
+## Naming Conventions
+
+Variables, arguments, functions and methods *must* use camelCase, not underscores.
+
+Example:
+
+```php
+public function doSomething($firstArgument)
+{
+    $someVariableName = 'foobar';
+}
+```
+
+Options and parameters names *must* use underscores, not camelCase.
+
+Example:
+
+```php
+public function foobarAction(Request $request, array $options = array())
+{
+    $mergedOptions = array_merge(
+        array(
+            'some_default' => 'values',
+            'another_default' => 'more values',
+        ),
+        $options
+    );
+
+    if ('string' === $mergedOptions['some_default']) {
+        return $request->get('some_parameter');
+    }
+
+    return $request->get('another_parameter');
+}
+```
+
+Prefix abstract classes with `Abstract`.
+
+Example:
+
+```php
+// ...
+
+abstract class AbstractFoobar
+{
+    \\ ...
+}
+```
+
+Suffix interfaces with `Interface`.
+
+Example:
+
+```php
+// ...
+
+interface FoobarInterface
+{
+    \\ ...
+}
+```
+
+Suffix traits with `Trait`.
+
+Example:
+
+```php
+// ...
+
+trait FoobarTrait
+{
+    \\ ...
+}
+```
+
+Suffix exceptions with `Exception`.
+
+Example:
+
+```php
+// ...
+
+class FoobarException extends Exception
+{
+    \\ ...
+}
+```
 
 ## Tests directory structure
 
