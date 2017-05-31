@@ -197,6 +197,7 @@ public function doSomething(
     array $arg3 = [],
     SomeClass $arg4
 ) {
+```
 
 ## Yoda Conditions
 
