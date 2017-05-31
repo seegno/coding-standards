@@ -27,6 +27,7 @@ You can check [Symfony documentation](http://symfony.com/doc/current/contributin
 1. [Naming conventions](#naming-conventions)
 1. [Yoda Conditions](#yoda-conditions)
 1. [Tests directory structure](#tests-directory-structure)
+1. [Gitignore](#gitignore)
 
 ## Indenting
 
